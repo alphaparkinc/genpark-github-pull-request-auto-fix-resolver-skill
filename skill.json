@@ -1,0 +1,35 @@
+{
+  "name": "genpark-github-pull-request-auto-fix-resolver-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous GitHub PR issue diagnosis & self-merging automated code fixer.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "pr-autofix",
+    "code-reviewer",
+    "automated-refactor",
+    "github-agent",
+    "ph-august17"
+  ],
+  "inputs": {
+    "pull_request_diff": {
+      "type": "string"
+    },
+    "ci_error_logs": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "auto_fix_patch": {
+      "type": "string"
+    },
+    "tests_passed": {
+      "type": "boolean"
+    },
+    "merge_ready_verdict": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
